@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+   function calculateFactorial(number){
+       if(number<0){
+         return "Please enter a non negative integer";
+   }else if(number===0||number===1){
+         return 1;
+   }else{
+         let factorial=1;
+         for(let i=2;i<=number;i++){
+         factorial*=i;
+   }
+          return factorial;
+   }
+   }
+let n=parseInt(prompt("Enter any number:"),10);
+if(isNaN(n)){
+   alert("Please enter a valid number");
+}else{
+   let result=calculateFactorial(n);
+   alert("The factorial of" + n +"="+ result);
+}
+</script>
+</body>
+</html>
